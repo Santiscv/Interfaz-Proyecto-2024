@@ -22,7 +22,7 @@ title_list=[]
 for title in title:
      title_guitar= title.text
      title_list.append(title_guitar)
-# print(title_list)
+
 
 price_list = []
 
