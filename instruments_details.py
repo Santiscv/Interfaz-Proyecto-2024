@@ -54,7 +54,9 @@ def mostrar_guitarras_disponibles(monto_disponible):
             guitarras_disponibles.append(guitarra)
 
     if len(guitarras_disponibles) == 0:
+        print("-------------------------------------------------")
         print("No hay guitarras disponibles para tu presupuesto.")
+        print("-------------------------------------------------")
         return
 
     print("Guitarras disponibles:")
@@ -64,7 +66,9 @@ def mostrar_guitarras_disponibles(monto_disponible):
 
     seleccion = int(input("Seleccione el número de la guitarra (0 para cancelar): "))
     if seleccion == 0:
-        print("Selección cancelada.")
+        print("--------------------")
+        print("Seleccion cancelada.")
+        print("--------------------")
         return 
 
     if seleccion >= 1 and seleccion <= len(guitarras_disponibles):
@@ -74,4 +78,6 @@ def mostrar_guitarras_disponibles(monto_disponible):
         for clave in detalles:
             print(f"{clave}: {detalles[clave]}")
     else:
-        print("Selección inválida.")
+        print("---------------------")
+        print("Seleccion incorrecta.")
+        print("---------------------")
