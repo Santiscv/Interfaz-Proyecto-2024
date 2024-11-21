@@ -22,9 +22,13 @@ def mostrar_guitarras_disponibles(monto_disponible):
                     # Obtener detalles adicionales
                     detalles = obtener_detalles_guitarra(guitarra_seleccionada['ruta'])
                     print("Detalles adicionales:")
+                    print(f"--------------------")
                     print(f"Origen: {detalles['Origen']}")
+                    print(f"--------------------")
                     print(f"Trastera: {detalles['Trastera']}")
+                    print(f"--------------------")
                     print(f"Micrófonos: {detalles['Micrófonos']}")
+                    print(f"--------------------")
                     break
                 else:
                     print("Selección no válida. Intente de nuevo.")
