@@ -1,9 +1,6 @@
 from instruments_details import obtener_lista_guitarras, obtener_detalles_guitarra ,mostrar_guitarras_disponibles
 
 def menu():
-    """
-    Menú principal para interactuar con el usuario.
-    """
     while True:
         try:
             monto_disponible = float(input("Ingrese el monto disponible (0 para salir): "))
